@@ -1,0 +1,342 @@
+*{
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url('../img/background.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    top: 0;
+    background-position: center top;
+    height: 100vh;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    color: yellow;
+}
+ul{
+    display: flex;
+    padding: 10px 20px;
+}
+li{
+    padding: 0px 20px;
+    list-style: none;
+}
+a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: aliceblue;
+}
+a:hover{
+    border-bottom: solid 1px yellow;
+}
+#nav #btn{
+    justify-content: space-between;
+    margin-left: auto;
+}
+.search{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+input[type='search']{
+    height: 30px;
+    color: aliceblue;
+    background: transparent;
+    outline: none;
+    border: 1px solid yellow;
+    border-radius: 8px;
+    padding:  5px;
+
+}
+::placeholder{
+    color: rgba(245, 245, 245, 0.763);
+}
+.search img{
+    padding: 10px 10px;
+}
+#btn{
+    padding: 10px;
+    border-radius: 8px;
+    background-color: yellow;
+    outline: none;
+}
+#btn:hover{
+    background-color: rgb(213, 213, 16);
+}
+section{
+    margin-top: 22%;
+    padding: 20px 40px;
+    font-size: 20px;
+    color: aliceblue;
+}
+section #btn{
+    padding: 10px;
+    margin-left: 50px;
+    border: none;
+}
+.div1{
+    margin-top: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img{
+    padding: 70px;
+    background-color: #222831;
+    display: flex;
+    color: aliceblue;
+    border-radius: 8px;
+
+}
+.img img{
+    border-radius: 50%;
+    border: 4px solid yellow;
+    padding: 10px;
+}
+.info{
+    padding: 20px;
+    margin: 10px;
+}
+.info button{
+    border-radius: 8px;
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    padding:5px ;
+    height: 50px;
+    background-color: rgb(213, 213, 16);
+    outline: none;
+}
+.info button:hover{
+    background-color: yellow;
+}
+.info img{
+    padding: none;
+    border: none;
+
+}
+.img img:hover{
+    transform: scale(1.1);
+}
+@media (max-width: 768px){
+    ul{
+        display: block;
+        margin-top: -20px;
+        position: absolute;
+        bottom: 1;
+        padding: 10px;
+        margin-left: 80px;
+        text-align: center;
+        height: 10px;
+        transition: height 2s;
+        overflow: hidden;
+    }
+    li{
+        padding: 5px;
+    }
+    ul:hover{
+        height: auto;
+     
+    }/*
+    #menu_btn{
+        display: inline;
+        padding: 10px;
+        border-radius: 8px;
+        border: none;
+        background-color: yellow;
+        outline: none;
+    }*/
+    .search input[type='search']{
+        display:none ;
+    }
+    .search{
+        margin-left: 200px;
+    }
+    .div1{
+        padding: 5px;
+        border-radius: 8px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .img{
+        display: grid;
+        padding: 70px;
+        border-radius: 8px;
+    }
+    .info{
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+.list ul{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.list li{
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+.list li:hover{
+   background-color: #222831;
+   color: aliceblue;
+   border-radius: 10px;
+}
+.heading{
+    text-align: center;
+    padding: 100px;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    align-items: center;
+    padding: 20px;
+}
+.menu_item{
+    background-color: #222831;
+    border-radius: 8px;
+    display: flex;
+    margin: 20px;
+    color: aliceblue;
+    text-transform: capitalize;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 300px;
+}
+.menu_item img{
+    height: 300px;
+    width: 300px;
+}
+.menu_item img:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px #222831;
+}
+.menu_item button{
+    border-radius: 8px;
+    display: flex;
+    margin: 5px;
+    border: none;
+    align-items: center;
+    padding:5px ;
+    height: 50px;
+    background-color: rgb(213, 213, 16);
+    outline: none;
+}
+.menu_item button:hover{
+    background-color: yellow;
+}
+.menu_item button img{
+    height: auto;
+    width: auto;
+}
+.menu_item button img:hover{
+    transform: none;
+    background-color: transparent;
+    box-shadow: none;
+}
+.info_block{
+    background-color: #222831;
+    display: flex;
+    justify-content: center;
+    align-items: center;padding: 10px;
+}
+.info_block img{
+    width: 400px;
+    height: 400px;
+}
+.block{
+    width: 500px;
+    padding: 50px;
+}
+.menu_item {
+    display: none;
+}
+.show {
+    float: left;
+    display: grid;
+    justify-content: left;
+    align-items: left;   
+}
+.book_table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/bground.avif');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    top: 0;
+    background-position: center top;
+    text-align: center;
+    color: aliceblue;
+}
+.table_info input{
+    padding: 2px;
+    outline: none;
+    border: none;
+    margin: 10px;
+    height: 40px;
+    color: aliceblue;
+    width: 400px;
+    border-bottom: 1px solid yellow;
+    background-color: transparent;
+}
+.table_info{
+    padding: 30px;
+}
+.table_info ::placeholder{
+    color: aliceblue
+}
+.table_info  #btn1{
+    padding: 2px;
+    outline: none;
+    border: none;
+    margin: 10px;
+    color: aliceblue;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid yellow;
+    background-color: transparent;
+}
+.table_info  #btn1:hover{
+    box-shadow: 0px 0px 5px inset yellow;
+}
+footer{
+    margin: 40px;
+    background-color: #222831;
+    width: auto;
+}
+.footer_info{
+    display: flex;
+    padding: 40px;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+}
+.footer_info img{
+    height: 20px;
+    width: 20px;
+    gap: 5px;
+}
+.footer_block{
+    margin: 60px;
+    text-align: center;
+}
+.footer_block h1{
+    margin: 10px;
+}
+.footer-bottom{
+    color: aliceblue;
+    text-align: center;
+    padding: 40px;
+}
